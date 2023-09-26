@@ -1,8 +1,26 @@
-import Image from 'next/image'
-import React from 'react'
+import StudentInfo from "app/StudentInfo.js";
+import StudentInfo from "app/StudentInfo.js";
+import StudentInfo from "app/StudentInfo.js";
 import StudentInfo from 'app/StudentInfo.js'
-import Link from 'next/link'
+import Image from "next/image";
+import Image from "next/image";
+import Image from "next/image";
+import Link from "next/link";
+import Link from "next/link";
+import Link from "next/link";
+import React from "react";
+import React from "react";
+import React from "react";
+import Image from 'next/image';
 
+const week2page = () => {
+    return (
+        <div>
+            <h1>My Shopping List</h1>
+            <StudentInfo/>
+        </div>
+    );
+}
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -25,8 +43,7 @@ export default function Home() {
               className="dark:invert"
               width={100}
               height={24}
-              priority
-            />
+              priority />
           </a>
         </div>
       </div>
@@ -38,8 +55,7 @@ export default function Home() {
           alt="Next.js Logo"
           width={180}
           height={37}
-          priority
-        />
+          priority />
       </div>
 
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
@@ -114,7 +130,7 @@ export default function Home() {
     </main>
 
   )
- 
+
   function page() {
     return (
       <div>
@@ -122,7 +138,7 @@ export default function Home() {
         <StudentInfo />
         <Link href="/app/week2/page.js">Week 2</Link>
       </div>
-    );
+    )
   }
-  
+
 }
