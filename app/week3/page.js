@@ -1,6 +1,6 @@
-import Item from 'app/week3/item-list.js';
+import ItemList from 'app/week3/item-list.js';
 
-function page() {
+export default function page() {
     return (
         <main className="bg-indigo-600">
             <h1 className="text-lg">Shopping List</h1>
@@ -8,5 +8,3 @@ function page() {
         </main>
     );
 }
-
-export default page;

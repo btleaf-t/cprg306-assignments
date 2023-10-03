@@ -1,5 +1,4 @@
 import Item from 'app/week3/item.js';
-
 function ItemList() {
     const item1 = {
         name: "milk, 4 L 🥛",
@@ -86,5 +85,7 @@ function ItemList() {
                 </ul>
             </div>
         );
-    };  
+    }; 
 }
+
+export default ItemList;
