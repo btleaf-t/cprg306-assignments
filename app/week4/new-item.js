@@ -1,4 +1,4 @@
-
+import { useState } from 'react';
 
 const NewItem = () => {
     const [name, setName] = useState('');
@@ -34,14 +34,14 @@ const NewItem = () => {
     }
 
     return(
-        <div>
-            <form onSubmit={handleSubmit}>
-                <label>
+        <div class="p-3 border rounded-lg shadow-sm">
+            <form onSubmit={handleSubmit} class="grid grid-cols-1 gap-3 sm:grid-cols-2 bg-blue-100 p-5">
+                <label class="font-semibold text-sm mb-1">
                     Name:
                     <input type="text" value={name} onChange={(n) => setName(n.target.value)} required />
                 </label>
 
-                <label>
+                <label class="font-semibold text-sm mb-1">
                     Quantity:
                     <input type="number" value={quantity} onChange={(n) => setQuantity(Number(n.target.value))} 
                     min="1"
@@ -49,7 +49,7 @@ const NewItem = () => {
                     required />
                 </label>
 
-                <label>
+                <label class="font-semibold text-sm mb-1">
                     Category:
                     <select value={category} onChange={(n) => setCategory(n.target.value)}>
                         <option value="produce">Produce</option>
@@ -66,7 +66,7 @@ const NewItem = () => {
                     </select>
                 </label>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="text-stone-300 bg-blue-300 rounded-md hover:bg-blue-500">Submit</button>
             </form>
         </div>
     );
