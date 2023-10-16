@@ -3,6 +3,7 @@ import React from 'react'
 import StudentInfo from 'app/StudentInfo.js'
 import Item from 'app/week3/item.js'
 import NewItem from 'app/week4/new-item.js'
+import Item from 'app/week5/item.js'
 import Link from 'next/link'
 
 export default function page() {
@@ -14,6 +15,7 @@ export default function page() {
         <Item />
         <Link href="/app/week3/page.js">Week 3</Link>
         <Link href="/app/week4/page.js">Week 4</Link>
+        <Link href="/app/week5/page.js">Week 5</Link>
       </div>
     );
   }
