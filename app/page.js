@@ -18,6 +18,8 @@ export default function page() {
         <Link href="/app/week5/page.js">Week 5</Link>
         <Link href="/app/week6/page.js">Week 6</Link>
         <Link href="/app/week7/page.js">Week 7</Link>
+        <Link href="/app/week8/page.js">Week 8</Link>
+        <Link href="/app/week10/page.js">Week 10</Link>
       </div>
     );
   }
